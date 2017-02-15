@@ -1,0 +1,86 @@
+/*
+Theme Name: Test for Clarence
+Theme URI: https://wordpress.org/themes/twentyseventeen/
+Author: Max Batchelder
+Author URI: https://1stAC.camera
+Description: Doop doop doop
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: maxbatcheldertest
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+body {
+	font-family: futura;
+	color: #3a3a3a;
+}
+
+#sitewrapper {
+	margin: 0 3em 0 3em;
+}
+
+.blogheader {
+	display: flex;
+}
+
+
+ul.menu {
+	display: flex;
+	list-style-type: none;
+}
+
+li.menu-item{
+	margin: .1em;
+	padding: .1em;
+	background-color: gray;
+}
+
+li.menu-item a {
+	text-decoration: none;
+	color: black;
+}
+
+
+li.menu-item a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+li.current-menu-item {
+	background-color: blue;
+	font-style: italic;
+}
+
+#blogtitle {
+	font-family: futura;
+	font-size: 5em;
+	color: #1B4A79;
+}
+
+.line {
+	height: 1px;
+	width: 100%;
+	background: #333;
+}
+
+#contentwrapper {
+	padding: 1em 2em 0 2em;
+	text-align: center;
+}
+
+.posttitle {
+	font-style: italic;
+}
+
+.post {
+	padding-top: 1em;
+	position: relative;
+}
+
+.posttitle {
+	font-size: 2em;
+}
