@@ -24,7 +24,10 @@
 <body <?php body_class(); ?>>
 <div id="sitewrapper">
 <div class="blogheader">
-	<div id="blogtitle"><?php bloginfo( "name" ) ?></div>
+	<div id="titlecontainer">
+		<div id="blogtitle"><?php bloginfo( "name" ) ?></div>
+		<div id="blogtagline"><?php bloginfo( "description" ) ?></div>
+	</div>
 	<?php wp_nav_menu( array( "theme_location" => "headermenu" ) ); ?>
 </div>
 <div class="line"></div>

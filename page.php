@@ -20,19 +20,10 @@ get_header(); ?>
 <?php if ( have_posts() ) : ?>
     <?php while ( have_posts() ) : the_post(); ?>
         <div class="post">
-        	<div class="post-title-container">
-				<div class="line postline"></div>
-				<div class="posttitle"><?php the_title(); ?></div>
-				<div class="line postline" ></div>
-			</div>
-			<div class="postclient">Client: <?php $client = get_cfc_field( "clientgroup", "client" ); if (get_cfc_field("clientgroup", "has-url")) : ?>
-							<?php $url = get_cfc_field( "clientgroup" , "url") ?>
-							<?php $client = "<a href=\"{$url}\">{$client}</a>" ?>
-						<?php endif ?>
-			<?php echo $client ?></div>
-			<div class="postdate"><?php the_date(); ?></div>
+        	<div class="posttitle"><?php the_title(); ?></div>
 			<?php the_content(); ?>
         </div>
+        <div class="line"/>
     <?php endwhile; ?>
 <?php endif; ?>
 
